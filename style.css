@@ -133,3 +133,7 @@ input:focus {
     margin-top: 20px;
     color: #04D361;
 }
+.resposta-negativa {
+    color: red;
+    font-weight: bold;
+}
