@@ -1,0 +1,135 @@
+/* Reset básico para remover estilos padrão do navegador */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fundo escuro com um tom azul arroxeado */
+body {
+    background-color: #121214;
+    color: #E1E1E6;
+    text-align: center;
+    padding: 50px;
+}
+
+/* Caixa principal */
+.container {
+    background: #202024;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 50%;
+    margin: auto;
+}
+
+/* Estilo para a mensagem de boas-vindas */
+.titulo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #04D361;
+}
+
+.titulo h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #8257E5;
+}
+
+.titulo h3 {
+    font-size: 18px;
+    color: #E1E1E6;
+}
+
+
+/* Perguntas */
+p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #E1E1E6;
+}
+
+/* Campos de entrada */
+input {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border: 2px solid #8257E5;
+    border-radius: 5px;
+    background: #121214;
+    color: #E1E1E6;
+    outline: none;
+}
+
+input:focus {
+    border-color: #04D361;
+}
+
+/* Botão principal */
+.btn-enviar {
+    background: #8257E5;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-enviar:hover {
+    background: #6f48c9;
+}
+
+/* Estilo das opções de resposta */
+#opcoes {
+    margin-top: 20px;
+}
+
+.btn-opcao {
+    padding: 12px;
+    margin: 5px;
+    width: 40%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+/* Botão "Sim" */
+.btn-sim {
+    background-color: #04D361;
+    color: white;
+}
+
+.btn-sim:hover {
+    background-color: #03a14a;
+}
+
+/* Botão "Não" */
+.btn-nao {
+    background-color: #E63946;
+    color: white;
+}
+
+.btn-nao:hover {
+    background-color: #b72b36;
+}
+
+/* Mensagem final */
+#resposta {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #04D361;
+}

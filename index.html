@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="style.css">
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Alura - 7DaysOfCode</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Frase estilizada -->
+        <div class="titulo">
+            <h1>Bem-vindo ao desafio Alura</h1>
+            <h2>7DaysOfCode</h2>
+            <h3>Day 2</h3>
+        </div>
+
+        <!-- Formulário -->
+        <p>Qual o seu nome?</p>
+        <input type="text" id="nome">
+
+        <p>Quantos anos você tem?</p>
+        <input type="number" id="idade">
+
+        <p>Qual linguagem de programação você está estudando?</p>
+        <input type="text" id="linguagem">
+
+        <button class="btn-enviar" onclick="mostrarMensagem()">Enviar</button>
+
+        <p id="mensagem"></p>
+
+        <!-- Opções de resposta -->
+        <div id="opcoes" style="display: none;">
+            <p>Você gosta de estudar <span id="linguagemEscolhida"></span>?</p>
+            <button class="btn-opcao btn-sim" onclick="responder(1)">Sim</button>
+            <button class="btn-opcao btn-nao" onclick="responder(2)">Não</button>
+        </div>
+
+        <p id="resposta"></p>
+    </div>
+
+    <script>
+        function mostrarMensagem() {
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+            var linguagem = document.getElementById("linguagem").value;
+
+            if (nome && idade && linguagem) {
+                document.getElementById("mensagem").innerHTML = `Olá ${nome}, você tem ${idade} anos e já está aprendendo ${linguagem}!`;
+                document.getElementById("linguagemEscolhida").innerText = linguagem;
+                document.getElementById("opcoes").style.display = "block";
+            }
+        }
+
+        function responder(resposta) {
+            if (resposta === 1) {
+                document.getElementById("resposta").innerHTML = "Muito bom! Continue estudando e você terá muito sucesso.";
+            } else {
+                document.getElementById("resposta").innerHTML = "Ahh que pena... Já tentou aprender outras linguagens?";
+            }
+        }
+    </script>
+
+</body>
+</html>
